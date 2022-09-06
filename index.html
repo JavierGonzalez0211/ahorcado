@@ -4,9 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/globalStyles.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Ahoracado</title>
   </head>
   <body>
-    <h1>Hola</h1>
+    <main class="main-container">
+      <div class="logo-container">
+        <img src="./images/Logo.svg" alt="Alura logo" />
+      </div>
+      <div class="tittle-container showUp-Animation">
+        <img src="./images/Titulo.png" alt="titulo" />
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn-inicio">Iniciar Juego</a>
+        <a
+          href="#"
+          class="btn-agregar-palabra"
+          data-info="agrega una palabra para tu oponente"
+        >
+          Agregar palabra
+        </a>
+      </div>
+    </main>
   </body>
 </html>
