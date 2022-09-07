@@ -1,12 +1,14 @@
 :root {
     /* font-size */
     --normal: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
-    --small: calc(var(--normal)*.75)
+    --small:clamp(14px, calc((0.80rem + 0.98vw)*.75), 1.125rem);
+    --Xsmall:clamp(12px, calc((0.80rem + 0.98vw)*.6), 14px);
     --big: clamp(1.25rem, calc(1.15rem + 0.49vw), 1.50rem);
-    --title: calc(var(--big)*1.5);
+    --title: calc(var(--big)*1.25);
 
     /* colors */
     --dark-blue-300: #0A3871;
+    --light-blue-100: #F3F5FC;
 
 }
 
@@ -32,7 +34,6 @@ button:hover {
 
 /* Tooltips */
 
-
 [data-info]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
@@ -42,7 +43,7 @@ button:hover {
     content: attr(data-info);
     background-color: #333;
     color: #fff;
-    font-size: 14px;
+    font-size: var(--Xsmall);
     font-family: "Inter", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     padding: 3px 20px;
@@ -101,5 +102,5 @@ button:hover {
 }
 
 .showUp-Animation{
-    animation: showUpAnimation 4s  ease-in-out infinite;
+    animation: showUpAnimation 4s  ease infinite;
 }
