@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/globalStyles.css" />
+
+    <link rel="stylesheet" href="./css/playing.css" />
+
+    <title>Jugar</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="./images/Logo.svg" alt="Alura logo" />
+        </div>
+        <div class="input-letter-container">
+          <label for="input-letter">Ingrese una letra aquí:</label>
+          <input type="text" id="input-letter" name="input-letter" />
+        </div>
+      </div>
+      <div class="horca-container">
+        <img src="./images/horcas/HorcaCOmpleta10.svg" alt="" />
+      </div>
+      <div class="letters-container">
+        <div class="right-letters-container">
+          <div class="right-letter">
+            <div class="letter"><span>A</span></div>
+            <div class="hyphens-container">
+              <img src="./images/Hyphen.svg" alt="hyphen" />
+            </div>
+            <div class="letter"><span>A</span></div>
+            <div class="hyphens-container">
+              <img src="./images/Hyphen.svg" alt="hyphen" />
+            </div>
+          </div>
+        </div>
+        <div class="wrong-letters">CD</div>
+      </div>
+
+      <div class="button-container">
+        <a href="#" class="btn-nuevo-juego" data-info="Reiniciar juego"
+          >Nuevo juego</a
+        >
+        <a href="./index.html" class="btn-desistir" data-info="ir al inicio">
+          Desistir
+        </a>
+      </div>
+    </main>
+    <script src="./js/playing.js"></script>
+  </body>
+</html>
