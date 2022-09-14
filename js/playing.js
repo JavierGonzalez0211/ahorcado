@@ -1,5 +1,7 @@
 let lettersPressed = [];
 
+// TODO: ver de que se incluya el input si es android o ios
+
 document.addEventListener(
   "keyup",
   (event) => {
