@@ -29,13 +29,12 @@
 }
 
 .input-letter-container {
-    display: flex;
     display: none;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    width: 280px;
+    flex-grow: 1;
     max-width: 90%;
     gap: 1rem;
     background-color: var(--dark-blue-300);
@@ -177,8 +176,6 @@
     .input-letter-container {
         display: flex;
     }
-
-
 
     .button-container{
         height: 142px;
