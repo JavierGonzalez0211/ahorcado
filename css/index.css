@@ -1,16 +1,16 @@
 .main-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.svg);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 .logo-container{
     display: flex;
     justify-content: center;
-    margin-left: 40px;
-    margin-top: 40px;
     border-radius: 8px;
     padding:0.5rem 0px;
     background-color: #E5E5E5;
@@ -30,7 +30,6 @@
     padding: 0 1rem;
     max-width: 80vw;
     align-self: center;
-    margin-top: 25vh;
 }
 
 .tittle-container img {
@@ -40,20 +39,18 @@
 
 .button-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
     width: 688px;
     max-width: 80%;
     height: 67px;
     justify-content: center;
     align-self: center;
-    margin-top: 4rem;
 }
 
 .btn-inicio {
     width: 332px;
     max-width: 100%;
-    height: 100%;
+    height: 67px;
     background: var(--dark-blue-300);
     font-size: var(--small);
     text-decoration: none;
@@ -67,7 +64,7 @@
 .btn-agregar-palabra {
     width: 332px;
     max-width: 100%;
-    height: 100%;
+    height: 67px;
     background: #E5E5E5;
     font-size: var(--small);
     text-decoration: none;
@@ -80,4 +77,17 @@
 
 
 
+@media (max-width: 768px){
+    .main-container{
+        padding: 1rem;
+        gap: .5rem;
+    }
 
+    .button-container{
+        height: 142px;
+        gap: .5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

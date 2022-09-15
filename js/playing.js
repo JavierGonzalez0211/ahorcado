@@ -1,11 +1,18 @@
 let lettersPressed = [];
 
-// TODO: ver de que se incluya el input si es android o ios
+let mobileOs = /Android|webOS|iPhone|iPad|iPod/i;
+
+let isMobile = mobileOs.test(navigator.userAgent);
+
+if (isMobile) {
+  console.log("USERAGENT", navigator.userAgent);
+  let input = document.getElementById("input-letter-container");
+  input.style.display = "flex";
+}
 
 document.addEventListener(
   "keyup",
   (event) => {
-    // let regExp = /([A-Za-z])/g;
     let regExp = /[A-Za-zÑñ]/g;
     var keyValue = event.key.toUpperCase();
     var codeValue = event.code;
@@ -16,11 +23,9 @@ document.addEventListener(
     let rightKeyPressed =
       regExp.test(keyValue) && codeValueCondition.includes(true);
 
-    // console.log("rightKey", rightKey);
     console.log("keyValue: " + keyValue);
     console.log("codeValue: " + codeValue);
     if (rightKeyPressed) {
-      //   console.log("keyValue", keyValue);
       lettersPressed.push(keyValue);
       console.log("lettersPressed", lettersPressed);
     }
