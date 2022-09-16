@@ -1,7 +1,9 @@
 .main-container {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.svg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mainBackground-mobile.jpeg);
+    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,22 +15,21 @@
     justify-content: center;
     border-radius: 8px;
     padding:0.5rem 0px;
-    background-color: #E5E5E5;
+    background-color: #ffffff;
     width: clamp(75px,120px,25%);
     height: fit-content;
 }
 
 .logo-container img {
     max-width: 27%;
+    color: #fff;
 }
 
 
 .tittle-container {
-    background-color: #E5E5E5;
-    border-radius: 8px;
     width: fit-content;
     padding: 0 1rem;
-    max-width: 80vw;
+    max-width: 95vw;
     align-self: center;
 }
 
@@ -65,7 +66,7 @@
     width: 332px;
     max-width: 100%;
     height: 67px;
-    background: #E5E5E5;
+    background: #ffffff;
     font-size: var(--small);
     text-decoration: none;
     text-align: center;
