@@ -32,3 +32,10 @@ document.addEventListener(
   },
   false
 );
+
+let secretWord = document.cookie.replace(
+  /(?:(?:^|.*;\s*)secretWord\s*\=\s*([^;]*).*$)|^.*$/,
+  "$1"
+);
+
+console.log("playing", secretWord);

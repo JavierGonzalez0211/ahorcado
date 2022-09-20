@@ -47,7 +47,7 @@ button:hover {
     font-family: "Inter", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     padding: 3px 20px;
-    bottom: -2.5em;
+    top:-2rem;
     left: 50%;
     transform: translate(-50%);
     white-space: nowrap;
